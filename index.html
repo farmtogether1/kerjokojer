@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joker</title>
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/LogoIcon.png" />
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/pagePreloaders.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+  <!-- <script src="./assets/moment-timezone/"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data.min.js"></script>
+
+</head>
+
+<body>
+  <div id="wholePage">
+    <header class="header" id="header">
+      <section class="container ">
+        <nav class="navbar navbar-expand-lg navbar-light py-4  a1 row mx-0  navFont pr-0">
+          <div class=" col-auto text-center ">
+            <a class="navbar-brand p-0" style="margin-top: -6px;" href="#">
+
+              <img class="img-fluid" id="logo" src="assets/images/Logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="order-md-2 order-3 toggle-icon-custom">
+            <button class="navbar-toggler btn-btn-toggle" type="button" data-toggle="collapse"
+              data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse col  jc-end collapse-nav pr-0-lg" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="#">Home </a>
+              <a class="nav-item nav-link" href="#vision">Vision</a>
+              <a class="nav-item nav-link" href="#ecosystem">Ecosystem</a>
+              <a class="nav-item nav-link" href="#upcomingprojects">Projects</a>
+              <a class="nav-item nav-link" href="#token">Tokenomics</a>
+              <a class="nav-item nav-link" href="#roadmap">RoadMap</a>
+              <a class="nav-item nav-link" href="#whitepaper">WhitePaper</a>
+            </div>
+            <button class="sigupBtn" id="connect-wallet">Connect Wallet</button>
+
+          </div>
+
+
+        </nav>
+        <div class="row headerSection">
+          <div class="col-lg-6 col1" data-animation="fadeIn">
+            <div data-animation="slideInUp" data-animation-delay="100ms">
+              <span class="biggestKnowledge">biggest knowledge & wisdom marketplace</span>
+            </div>
+            <div data-animation="slideInUp" data-animation-delay="300ms">
+              <h1 class="main-title">Seeking Next Generation Dapp's</h1>
+            </div>
+            <div data-animation="slideInUp" data-animation-delay="500ms">
+              <p class="para">Seeko space aims to build a decentralized ecosystem built on the web 3.0 network connected
+                by cross-chain solution that will enable seeko services on every blockchain.</p>
+            </div>
+            <div class="mt-5 headerBtn" data-animation="slideInUp" data-animation-delay="700ms">
+              <button onclick="window.location.href='https://discord.gg/JDDmJsSFDZ';" class="getStatedBtn">JOIN
+                DISCORD</button>
+              <a href="assets/white%20paper-sko.pdf" target="_blank" class="buyCoinBtn ml-3">Whitepaper</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 col2">
+            <img src="assets/images/flow.gif" alt="blockchain" />
+          </div>
+        </div>
+        <div class="timeSection">
+          <div data-animation="slideInUp" data-animation-delay="100ms">
+            <span class="presaleStart">PRESALE ENDS IN</span>
+          </div>
+          <div class="timeDiv ">
+            <div class="time">
+              <h1 id="day"></h1>
+              <span>DAYS</span>
+            </div>
+            <span class="colon">:</span>
+
+            <div class="time">
+              <h1 id="hour"></h1>
+              <span>HOURS</span>
+            </div>
+            <span class="colon">:</span>
+
+            <div class="time">
+              <h1 id="minute"></h1>
+              <span>MINUTES</span>
+            </div>
+            <span class="colon">:</span>
+
+            <div class="time">
+              <h1 id="seconds"></h1>
+              <span>SECONDS</span>
+            </div>
+          </div>
+          <span class="presaleStart">AVAILABLE ON</span>
+          <div class="presaleBtn">
+
+            <a class="preBtn btn sale-buttons" target="_blank"
+              href="https://www.pinksale.finance/launchpad/0xB926c6cA8F03FC172935a2726d4a4DF3cb0bcE0f?chain=BSC">PinkSale</a>
+            <a class="preBtn btn sale-buttons" target="_blank" href="https://dapp.seeko.space/">SEEKO DAPP</a>
+            <a class="preBtn btn sale-buttons" target="_blank" href="#" style="display: inline;">DODOEX <span
+                style="font-size: 10px">soon!</span></a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- {/* vision section */} -->
+    <section id="vision" class="ourVisionSec container">
+      <div class="row ai-center jc-center">
+        <div class="col-md-6 col-10 jc-center col1 " data-animation="zoomIn" data-animation-delay="100ms">
+          <img class="w-100 hoverTranslateY" src="assets/images/Illustration.webp" alt="" />
+        </div>
+        <div class="col-md-6 " data-animation="zoomIn" data-animation-delay="400ms">
+          <div class="col2">
+            <p class="global">
+              global digital finance
+            </p>
+            <h2 class="main-title">Our Vision</h2>
+            <p class="para"><span class="font-bold">Seeko Ecosystem long-term vision and mission:</span></p>
+            <p class="para mt-4">Seeko will create a decentralized ecosystem on web3.0. These decentralized services
+              includes launchpads for emerging talents in sports and IT fields and content creators to building a
+              decentralized content platform built on web 3.0 that will massively increase the growth of web 3.0 and of
+              course its adoption. </p>
+            <button class="getBtn mt-4">get started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- {/* upcomming section */} -->
+    <section id="upcomingprojects" class="upCommingSec overflow_hidden">
+      <div class="container">
+        <div class="text-center mb-5" data-animation="slideInUp" data-animation-delay="0ms">
+          <img class="icon" src="assets/images/logo-icon-new.svg" alt="LogoIcon" />
+          <p class="project">projects</p>
+          <h2 class="main-title">Approaching DAPP's</h2>
+          <p class="para"><span class="font-bold">Door to WEB 3.0</span></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 d-flex jc-center ai-center" data-animation="slideInRight">
+            <div class="Project1">
+              <div>
+                <img class="macbook dapp-laptops" src="assets/images/seeko_launchpad_2.webp" alt="SeekoLock Image" />
+              </div>
+              <div class="contentDiv">
+                <h3>Seeko <br> Decentralized Launchpads</h3>
+                <p>Seeko will be niching its support on emerging talents in sports and IT field.</p>
+                <a href="#" class="read ">Read more<img class="ml-2" src="assets/images/arrowRight.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex jc-center ai-center" data-animation="slideInUp">
+            <div class="Project2">
+              <div>
+                <img class="macbook" src="assets/images/laptop-pic.webp" alt="SeekoLock Image" />
+              </div>
+              <div class="contentDiv">
+                <h3>Seeko <br> NFT <br> Market Place</h3>
+                <p>Seeko believes in the digitization of our products otherwise currently known as NFTs.</p>
+                <a href="#" class="read ">Read more<img class="ml-2" src="assets/images/arrowRightWhite.png"
+                    alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex jc-center ai-center" data-animation="slideInLeft">
+            <div class="Project1">
+              <div>
+                <img class="macbook dapp-laptops" src="assets/images/seeko_covid.webp" alt="SeekoLock Image" />
+              </div>
+              <div class="contentDiv seeko-vac">
+                <h3>Seeko Content Marketplace</h3>
+                <p>Seeko introduces a, Smart contract-based platform especially for content creators. A tokenized
+                  MARKETPLACE for content producers.</p>
+                <a href="#" class="read ">Read more<img class="ml-2" src="assets/images/arrowRight.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- {/* ecosystem */} -->
+    <section id="ecosystem" class="ecoSystem">
+      <div class="container">
+        <div class="text-center mb-5" data-animation="slideInUp">
+          <img class="icon" src="assets/images/ecoIcon.png" alt="ecosystem Icon" />
+          <p class="Ecosystem">Ecosystem</p>
+          <h2>Seeko EcoSystem</h2>
+          <p class="para">Seeking Next Generation Ecosystem</p>
+        </div>
+        <div class="row jc-center">
+
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  mb-3" data-animation="flipInY">
+            <div class="box hoverTranslateY">
+              <img class="logo mb-3" src="assets/images/dropShipping.png" alt="drop Shipping" />
+              <h5 class="mb-3">Cross Chain Solution</h5>
+              <p class="mb-0">Multi-network token based ecosystem</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  mb-3" data-animation="flipInY" data-animation-delay="100ms">
+            <div class="box hoverTranslateY">
+              <img class="logo mb-3" src="assets/images/sandyCoin.png" alt="drop Shipping" />
+              <h5 class="mb-3">DeFi</h5>
+              <p class="mb-0">Decentralized Finance</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  mb-3" data-animation="flipInY" data-animation-delay="200ms">
+            <div class="box hoverTranslateY">
+              <img class="logo mb-3" src="assets/images/Dfi.png" alt="drop Shipping" />
+              <h5 class="mb-3">SeekoToken</h5>
+              <p class="mb-0">Token trading on different exchanges</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  mb-3" data-animation="flipInY" data-animation-delay="300ms">
+            <div class="box hoverTranslateY">
+              <img class="mobilelogo " src="assets/images/mobile.png" alt="drop Shipping" />
+              <h5 class="mb-3">NFT</h5>
+              <p class="mb-0">Seeko NFT's Trading Market</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  mb-3" data-animation="flipInY" data-animation-delay="400ms">
+            <div class="box hoverTranslateY">
+              <img class="logo mb-3" src="assets/images/nft.png" alt="drop Shipping" />
+              <h5 class="mb-3">DAPPs</h5>
+              <p class="mb-0">Decentralized Launchpads for emerging talents</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  mb-3" data-animation="flipInY" data-animation-delay="500ms">
+            <div class="box hoverTranslateY">
+              <img class="logo mb-3" src="assets/images/nft.png" alt="drop Shipping" />
+              <h5 class="mb-3">DAPPs</h5>
+              <p>Decentralized Content Marketplace</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="text-center mt-4">
+          <button class="getStart">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- {/* roamap */} -->
+    <section id="roadmap" class="roadmap overflow_hidden">
+      <div class="container">
+        <div class="text-center mb-5 " data-animation="slideInUp">
+          <img class="icon" src="assets/images/logo-icon-new.svg" alt="LogoIcon">
+          <p class="project">SEEKO ROAD MAP</p>
+          <h2 class="main-title">Current Road Map</h2>
+          <p class="para">Seeking Next Generation Dapps</p>
+        </div>
+        <!-- {/* roadmap row 1 */} -->
+        <div class="row ai-center roadmapRow ">
+          <div class="col-md-5 col-sm-9 order-sm-1 order-2 " data-animation="slideInRight">
+            <div class="roadmapBox">
+              <h5>Launch of Seeko Website</h5>
+              <p class="para">Gateway to next decentralized world.</p>
+              <img class="arrow-roadLeft1" src="assets/images/post-arrow-Left.svg" alt="">
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3 order-sm-2 order-1">
+            <div class="roadMapCircleDiv roadMapCircleMarginOdd">
+              <h5>Q2</h5>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+        <!-- {/* roadmap row 2 */} -->
+        <div class="row ai-center roadmapRow">
+          <div class="col-5 d-none-md"></div>
+          <div class="col-md-2 col-sm-3 ">
+            <div class="roadMapCircleDiv1 roadMapCircleMarginEven">
+              <h5>Q2</h5>
+              <span>2022</span>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-9 " data-animation="slideInLeft">
+            <div class="roadmapBox">
+              <h5>Communitiy Engaging</h5>
+              <p class="para">Seeko will build a Communitiy and it is very necessaary before ICO campaigning.</p>
+              <img class="arrow-roadRight1" src="assets/images/post-arrow-Left.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- {/* roadmap row 3 */} -->
+        <div class="row ai-center roadmapRow ">
+          <div class="col-md-5 col-sm-9 order-sm-1 order-2 " data-animation="slideInRight">
+            <div class="roadmapBox">
+              <h5>Seeko ICO Campaign</h5>
+              <p class="para">Cutting edge decentralized solution for all centralized platforms using Dapps.</p>
+              <img class="arrow-roadLeft2" src="assets/images/post-arrow-Left.svg" alt="">
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3 order-sm-2 order-1">
+            <div class="roadMapCircleDiv2 roadMapCircleMarginOdd">
+              <h5>Q2</h5>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+        <!-- {/* roadmap row 4 */} -->
+        <div class="row ai-center roadmapRow">
+          <div class="col-5 d-none-md"></div>
+          <div class=" col-md-2 col-sm-3 ">
+            <div class="roadMapCircleDiv3 roadMapCircleMarginEven">
+              <h5>Q3</h5>
+              <span>2022</span>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-9 " data-animation="slideInLeft">
+            <div class="roadmapBox">
+              <h5>Seeko Public Sale</h5>
+              <p class="para">User's participation in Seeko ecosystem through Seeko.space Dapp</p>
+              <img class="arrow-roadRight2" src="assets/images/post-arrow-Left.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+        <!-- {/* roadmap row 5 */} -->
+        <div class="row ai-center roadmapRow ">
+          <div class="col-md-5 col-sm-9 order-sm-1 order-2 " data-animation="slideInRight">
+            <div class="roadmapBox">
+              <h5>Seeko Trading on DEX's</h5>
+              <p class="para">Seeko will be trading on different decentralized exchanges mainly on PancakeSwap.</p>
+              <img class="arrow-roadLeft3" src="assets/images/post-arrow-Left.svg" alt="">
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3 order-sm-2 order-1">
+            <div class="roadMapCircleDiv4 roadMapCircleMarginOdd">
+              <h5>Q3</h5>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+        <!-- {/* roadmap row 6 */} -->
+        <div class="row ai-center roadmapRow">
+          <div class="col-5 d-none-md"></div>
+          <div class="col-md-2 col-sm-3">
+            <div class=" roadMapCircleDiv5 roadMapCircleMarginEven">
+              <h5>Q3</h5>
+              <span>2022</span>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-9 " data-animation="slideInLeft">
+            <div class="roadmapBox">
+              <h5>Launch of Seeko NFT Marketplace beta</h5>
+              <p class="para">Seeko is going to launch a sports based NFT Marketplace where User's can buy and sell
+                their favourite player NFT's.</p>
+              <img class="arrow-roadRight3" src="assets/images/post-arrow-Left.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+        <!-- {/* roadmap row 7 */} -->
+        <div class="row ai-center roadmapRow ">
+          <div class="col-md-5 col-sm-9 order-sm-1 order-2 " data-animation="slideInRight">
+            <div class="roadmapBox">
+              <h5>Launch Content Based Marketplace</h5>
+              <p class="para">Seeko introduces a, Smart contract-based platform especially for content creators. A
+                tokenized MARKETPLACE for content producers.</p>
+              <img class="arrow-roadLeft4" src="assets/images/post-arrow-Left.svg" alt="">
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3 order-sm-2 order-1">
+            <div class="roadMapCircleDivLast last-circle roadMapCircleMarginOdd">
+              <h5>Q4</h5>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- {/* tokenomics */} -->
+
+    <section class="tokenmics">
+      <div class="container">
+        <div class="text-center mb-5" data-animation="slideInUp">
+          <img class="icon" src="assets/images/logo-icon-new.svg" alt="LogoIcon" />
+          <p class="project">Tokenomics</p>
+          <h2 class="main-title">Tokenomics Comparison</h2>
+          <p class="para">Numbers behind Seeko Tokenomics</p>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex jc-center" data-animation="slideInUp">
+            <div class="col1 hoverTranslateY">
+              <div class="contentDiv">
+                <div class="imgDiv">
+                  <img src="assets/images/development.webp" alt="" />
+                </div>
+                <p class="read mb-0">Current Supply</p>
+                <h3>Seeko Supply</h3>
+                <p>Presale planned for Q2 2022</p>
+                <button class="getStarted">Presale</button>
+                <p>The project will undergo 4 phases. First is ICO, second is developing dapps, third is NFT BETA and
+                  last phase is launching DAPPs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex jc-center" data-animation="slideInUp" data-animation-delay="200ms">
+            <div class="col1 hoverTranslateY">
+              <div class="contentDiv">
+                <div class="imgDiv">
+                  <img src="assets/images/maxSupply.png" alt="" />
+                </div>
+                <p class="read mb-0">Max supply</p>
+                <h3>400,000,000</h3>
+                <p>SEEKO tokens</p>
+                <button class="getStarted">BSC Scan</button>
+                <p>Total Supply as the total amount of tokens in existence right now, minus any tokens that have been
+                  verifiably burned on dead address. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex jc-center" data-animation="slideInUp" data-animation-delay="400ms">
+            <div class="col1 hoverTranslateY">
+              <div class="contentDiv">
+                <div class="imgDiv">
+                  <img src="assets/images/uniswap.png" alt="uniswap" />
+                </div>
+                <p class="read mb-0">Pink Sale</p>
+                <h3>PinkSale</h3>
+                <p>The Launchpad Protocol.</p>
+                <button class="getStarted3"><a target="_blank"
+                    href="https://www.pinksale.finance/launchpad/0xB926c6cA8F03FC172935a2726d4a4DF3cb0bcE0f?chain=BSC"
+                    class="sale-buttons">PINK SALE</a></button>
+                <p>PinkSale helps everyone to launch their tokens and token sales in few seconds.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex jc-center" data-animation="slideInUp" data-animation-delay="600ms">
+            <div class="col1 hoverTranslateY">
+              <div class="contentDiv">
+                <div class="imgDiv">
+                  <img src="assets/images/uniswap1.webp" alt="uniswap" />
+                </div>
+                <p class="read mb-0">DEX Trading</p>
+                <h3>PancakeSwap</h3>
+                <p>After PRESALE on PancakeSwap</p>
+                <button class="getStarted">PancakeSwap</button>
+                <p>This will be the estimated price of Seeko and the on information will be provided by connected
+                  exchanges via API.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- tokenomics -->
+    <section class="section data section--no-pad-top tokenDisSection" id="token">
+      <div class="container">
+        <div class="text-center mb-5" data-animation="slideInUp">
+          <img class="icon" src="assets/images/logo-icon-new.svg" alt="LogoIcon" />
+          <p class="project">SEEKO</p>
+          <h2 class="main-title">Seeko Tokenomics Distribution</h2>
+          <p class="para">Seeking Next Generation Ecosystem for Web 3.0</p>
+        </div>
+
+        <div class="row">
+          <div class="col">
+
+            <div class="data-progress" data-aos="fade-up">
+              <div class="data-progress__item"
+                style="box-shadow: 0 0 15px #16bf86; background-color: #16bf86; width: 19%;">
+                <p><span>25%</span> - Public Sale</p>
+              </div>
+              <div class="data-progress__item"
+                style="box-shadow: 0 0 15px #5775cf; background-color: #5775cf; width: 17%;">
+                <p><span>20%</span> - NFT STAKING</p>
+              </div>
+              <div class="data-progress__item"
+                style="box-shadow: 0 0 15px #f2718b; background-color: #f2718b; width: 17%;">
+                <p><span>20%</span> - LP Pool's Reward</p>
+              </div>
+              <div class="data-progress__item"
+                style="box-shadow: 0 0 15px #ff903e; background-color: #ff903e; width: 17%">
+                <p><span>14%</span> - Marketing</p>
+              </div>
+              <div class="data-progress__item"
+                style="box-shadow: 0 0 15px #6F2874 ; background-color: #6F2874 ; width: 14%;">
+                <p><span>5%</span> - DEX</p>
+              </div>
+              <div class="data-progress__item"
+                style="box-shadow: 0 0 15px #16bf86; background-color: #16bf86; width: 15%;">
+                <p><span>16%</span> - TEAM & Advisory</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+            <ul class="data__list">
+              <li>
+                <b>Name:</b>
+                SEEKO
+              </li>
+              <li>
+                <b>Purchase methods accepted:</b>
+                USDT, BNB & BUSD
+              </li>
+            </ul>
+
+            <div class="data__info">
+              <div class="data__info-item">
+                Hard cap
+                <b style="color: #16bf86;">2500 BNB</b>
+              </div>
+              <div class="data__info-item">
+                Soft cap
+                <b style="color: #5775cf;">2200 BNB</b>
+              </div>
+              <div class="data__info-item">
+                Cost of 1 SEEKO Token
+                <b style="color: #f2718b; font-size: 17px;">0.000025 BNB (0.0075$)</b>
+              </div>
+            </div>
+
+            <ul class="data__list">
+              <li>
+                <b>New Token emissions: </b>
+                No
+              </li>
+              <li>
+                <b>Bonus system:</b>
+                YES on our DISCORD Channel
+              </li>
+              <li>
+                <b>Min/Max Personal Cap:</b>
+                0.01 BNB / No limit
+              </li>
+            </ul>
+
+            <a type="button" href="assets/Tokenomics-sko.pdf" target="_blank"
+              class=" buy_token d-flex jc-center ai-center ">TOKENOMICS</a>
+
+          </div>
+          <div class="col-lg-6">
+            <div class="data__images">
+              <!-- <img class="data__images-bg" src="img/bg_5.png" alt=""> -->
+              <div class="data__images-logo">
+                <img src="assets/images/Logo.png" class="logoPulse" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <img src="img/figure-pink.png" alt="" data-jarallax-element="-40" class="data__figure-1"> -->
+      </div>
+    </section>
+    <!-- ------------- -->
+
+    <!-- {/* white paper */} -->
+    <section id="whitepaper" class="ourVisionSec container">
+      <div class="row ai-center jc-center">
+        <div class="col-md-6 col-10 jc-center col1" data-animation="fadeIn">
+          <img class="w-100" src="assets/images/whitepaper.webp" alt="" />
+        </div>
+        <div class="col-md-6 " data-animation="fadeIn">
+          <div class="col2">
+            <p class="global">
+              SEEKO WHITE PAPER
+            </p>
+            <h2 class="main-title">Read our Whitepaper</h2>
+            <p class="para">Get detailed tokenomics and use cases of Seeko documentation and white paper.</p>
+            <a href="assets/white%20paper-sko.pdf" target="_blank" class="pdfBtn mt-4">
+              <div class="imgDIv">
+                <img src="assets/images/pdfIcon.png" alt="pdf download" />
+              </div>
+              <div>
+                <p class="download">DOWNLOAD</p>
+                <p class="whitepaper">Whitepaper</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="row row2">
+          <div class="col-xl-6 col-lg-4 ">
+            <div class="footerLogo">
+              <img src="assets/images/Logo.png" alt="logo" />
+            </div>
+            <p class="desc">Seeko space aims to build a decentralized ecosystem built on the web 3.0 network connected
+              by cross-chain solution that will enable seeko services on every blockchain.</p>
+            <div class="socialIcon">
+              <a href="https://www.facebook.com/spacedapps" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/seekospace" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://discord.com/invite/JDDmJsSFDZ" target="_blank"><i class="fab fa-discord"></i></a>
+              <a href="https://github.com/seekospace" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/channel/UCzAlZjo2ob5MyhjR-c6YUSA" target="_blank"><i
+                  class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright"><span class="font-bold">2022</span> @ copyrights, all right reserved.</p>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+            <h4 class="quickLinks">Quick Link</h4>
+            <ul>
+              <li><a href="#"> Home </a></li>
+              <li><a href="#vision"> Vision </a></li>
+              <li><a href="#whitepaper"> Whitepaper </a></li>
+              <li><a href="#token"> Tokenomics </a></li>
+              <li><a href="#ecosystem"> Ecosystem </a></li>
+              <li><a href="#roadmap"> RoadMap </a></li>
+              <li><a href="#upcomingprojects"> upcoming projects</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+            <h4 class="quickLinks">About us</h4>
+            <ul>
+              <li><a href="#"> Whitepaper </a></li>
+              <li><a href="#"> DAPP</a></li>
+              <li><a href="#"> Pink Sale </a></li>
+              <li><a href="#"> Terms and Conditions </a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-sm-4">
+            <h4 class="quickLinks">Support</h4>
+            <ul>
+              <li><a href="#"> FAQs </a></li>
+              <li><a href="#">info@seeko.space</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!-- scroll to top -->
+    <div>
+
+      <button class="" id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+    </div>
+  </div>
+</body>
+<script src="assets/js/animate.js"></script>
+
+<!-- for onscroll veiwport style  -->
+<script defer src="assets/js/storyline.min.js"></script>
+<script defer src="assets/js/functions.js"></script>
+<!-- preloader -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/pagePreloaders.js"></script>
+
+<script>
+  $(window).on('load', function () {
+    // alert("Window Loaded");
+    // document.getElementById('header').style.visibility="visible";
+
+  });
+  document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+
+
+    } else if (state == 'complete') {
+      setTimeout(function () {
+        document.getElementById('wholePage').style.visibility = "visible";
+      }, 500);
+    }
+  }
+</script>
+<script>
+  function time() {
+    var setDay = document.getElementById('day')
+    var setHour = document.getElementById('hour')
+    var setMinute = document.getElementById('minute')
+    var setSeconds = document.getElementById('seconds')
+    console.log("asdf");
+    // var moment = require('moment-timezone');
+    var timeElement, eventTime, currentTime, duration, interval, intervalId;
+    interval = 1000; // 1 second
+
+    eventTime = moment.tz("2022-06-20T00:01:00", "America/Los_Angeles");
+    currentTime = moment.tz();
+    duration = moment.duration(eventTime.diff(currentTime));
+
+
+    // loop to countdown every 1 second
+    setInterval(function () {
+      // get updated duration
+      duration = moment.duration(duration - interval, 'milliseconds');
+
+      // if duration is >= 0
+      if (duration.asSeconds() <= 0) {
+        console.log(duration);
+        console.log("duration");
+        // clearInterval(intervalId);
+        setDay.innerHTML = "00";
+        setHour.innerHTML = "00";
+        setMinute.innerHTML = "00";
+        setSeconds.innerHTML = "00";
+      } else {
+        let day = duration.days()
+        day = day.toString().replace(/\b(\d{1})\b/g, '0$1');
+        let hour = duration.hours()
+        hour = hour.toString().replace(/\b(\d{1})\b/g, '0$1');
+        let minute = duration.minutes()
+        minute = minute.toString().replace(/\b(\d{1})\b/g, '0$1');
+        let seconds = duration.seconds()
+        seconds = seconds.toString().replace(/\b(\d{1})\b/g, '0$1');
+
+        // if(day > 0){
+        //   hour = parseInt(hour) + (parseInt(day) * 24)
+        // }
+
+        setDay.innerHTML = day;
+        setHour.innerHTML = hour;
+        setMinute.innerHTML = minute;
+        setSeconds.innerHTML = seconds;
+        // console.log(day)
+        // console.log(hour)
+        // console.log(minute)
+        // console.log(seconds)
+
+      }
+
+
+    }, interval);
+  }
+  time()
+</script>
+<script src="assets/js/ethers.umd.min.js"></script>
+<script src="assets/js/wallet.js"></script>
+
+</html>
