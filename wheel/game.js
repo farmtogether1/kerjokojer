@@ -10,9 +10,9 @@ var slices = 8;
 var slicePrizes = [
   "A KEY!!!",
   "50 BNB",
-  "500 BNB",
+  "500 USDT",
   "BAD LUCK!!!",
-  "200 BNB",
+  "200 USDT",
   "100 BNB",
   "150 BNB",
   "BAD LUCK!!!",
